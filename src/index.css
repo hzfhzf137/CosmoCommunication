@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root and typography customizations if needed */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Keeping a:hover customization if you need a specific color transition not available in Tailwind */
+a:hover {
+  color: #535bf2; /* adjust this color as needed */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Media query for light color scheme - adjust only if you have specific needs that Tailwind can't handle */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
