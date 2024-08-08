@@ -25,15 +25,14 @@ const WeAreCosmo = () => {
           className="w-full h-full object-cover absolute inset-0"
           style={{ filter: 'blur(1px)' }}
         />
-        <div className="absolute inset-0 bg-black bg-opacity-10"></div> {/* Optional light overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-10"></div> 
       </div>
       <div className="flex flex-col justify-center items-center h-full text-center text-white absolute inset-0 p-4">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-2">
-          <span className="text-orange-500">WE ARE</span><br />
-          <span className="text-orange-500">COSMO</span>{' '}
-          <span className="text-orange-500">COMMUNICATION</span>
+        <h1 className="text-2xl font-sans sm:text-3xl md:text-4xl font-extrabold mb-2 ">
+          <span className="text-orange-400">COSMO</span>{' '}
+          <span className="text-orange-400">COMMUNICATION</span>
         </h1>
-        <p className="text-sm sm:text-lg md:text-xl text-gray-400 font-extrabold italic">
+        <p className="text-sm sm:text-lg font-serif md:text-xl text-gray-500 font-extrabold italic ">
           Designers · Offset Printers · Publishers · Packagers
         </p>
       </div>
