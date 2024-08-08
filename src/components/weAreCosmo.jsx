@@ -23,11 +23,11 @@ const WeAreCosmo = () => {
         alt="Cosmo Communication"
         className="w-full h-full object-cover absolute inset-0"
       />
-      <div className="flex flex-col justify-center items-center h-full text-center text-white absolute inset-0 p-4">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl text-orange-600 font-extrabold mb-2">
+      <div className="flex flex-col justify-center items-center h-full text-center text-white absolute inset-0 p-4 backdrop-blur-sm">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl text-orange-600 font-extrabold mb-2 ">
           WE ARE COSMO COMMUNICATION
         </h1>
-        <p className="text-sm sm:text-lg md:text-xl text-blue-800 font-extrabold italic">
+        <p className="text-sm sm:text-lg md:text-xl text-blue-500 font-extrabold italic ">
           Designers · Photographers · Offset Printers · Publishers · Packagers
         </p>
       </div>
