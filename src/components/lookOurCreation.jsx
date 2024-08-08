@@ -11,7 +11,7 @@ const LookOurCreation = () => {
           href="mailto:info@topicalprinters.com"
           className="border-b border-white hover:text-gray-500 hover:border-gray-500"
         >
-          info@CosmoCommunication.com
+          cosmo72@yahoo.com
         </a>{' '}
         or from our contact page.
       </p>

@@ -22,7 +22,7 @@ const ImageCardHandler = () => {
     ];
 
     return (
-        <div className="w-screen flex flex-wrap justify-center bg-gray-200 pt-10 pb-5">
+        <div className="w-screen flex flex-wrap justify-center bg-gray-200 pt-10 pb-5 gap-16">
             {imagesData.map((image) => (
                 <ImageCard
                     key={image.id}

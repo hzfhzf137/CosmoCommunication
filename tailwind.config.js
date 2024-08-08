@@ -30,13 +30,29 @@ export default {
           '50%': { transform: 'scale(1.05)' }
         }
       },
+      // Custom animations using the keyframes
       animation: {
         slideInLeft: 'slideInLeft 0.8s ease-out',
         spin: 'spin 1s linear 1',
         pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
-      }
+      },
+      textStrokeWidth: {
+        '2': '2px',
+      },
+      textStrokeColor: {
+        'black': '#000',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.text-stroke': {
+          '-webkit-text-stroke-width': 'var(--tw-text-stroke-width, 1px)',
+          '-webkit-text-stroke-color': 'var(--tw-text-stroke-color, black)'
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    }
+  ],
 }
-
