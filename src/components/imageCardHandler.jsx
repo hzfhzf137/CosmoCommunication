@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageCard from './imageCard';
+import ImageCard from '../components/imageCard';
 import image1 from '../assets/images/imageCreation2.jpg';
 import image2 from '../assets/images/imageCreation3.jpg';
 import image3 from '../assets/images/imageCreation4.jpg';
