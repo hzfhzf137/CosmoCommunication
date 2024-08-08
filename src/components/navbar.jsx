@@ -56,13 +56,13 @@ const Navbar = () => {
                 <div className="flex-grow flex items-center justify-end space-x-4">
                     <button
                         onClick={scrollToTop}
-                        className="text-blue-500 font-extrabold text-lg sm:text-xl md:text-2xl pr-5"
+                        className="text-blue-500 font-extrabold text-lg sm:text-xl md:text-2xl pr-2"
                     >
                         <FaArrowUp />
                     </button>
                     <button
                         onClick={toggleFullscreen}
-                        className="text-blue-500 font-extrabold text-lg sm:text-xl md:text-2xl pr-5"
+                        className="text-blue-500 font-extrabold text-lg sm:text-xl md:text-2xl pr-2"
                     >
                         <FaExpand />
                     </button>
