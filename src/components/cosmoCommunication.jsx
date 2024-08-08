@@ -5,7 +5,7 @@ const CosmoCommunication = () => {
     return (
         <React.Fragment>
             <Navbar/>
-            <h1 className=' mt-40 text-4xl font-extrabold text-blue-800'>Cosmo Communication</h1>
+            <h1 className=' mt-80 text-4xl font-extrabold text-blue-800'>Cosmo Communication</h1>
         </React.Fragment>
     );
 };
