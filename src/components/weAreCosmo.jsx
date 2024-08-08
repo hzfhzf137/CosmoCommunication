@@ -18,17 +18,23 @@ const WeAreCosmo = () => {
 
   return (
     <div className="relative h-[300px] sm:h-[400px] md:h-[500px] w-screen overflow-hidden">
-      <img
-        src={images[currentImageIndex]}
-        alt="Cosmo Communication"
-        className="w-full h-full object-cover absolute inset-0"
-      />
-      <div className="flex flex-col justify-center items-center h-full text-center text-white absolute inset-0 p-4 backdrop-blur-sm">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl text-orange-600 font-extrabold mb-2 ">
-          WE ARE COSMO COMMUNICATION
+      <div className="absolute inset-0">
+        <img
+          src={images[currentImageIndex]}
+          alt="Cosmo Communication"
+          className="w-full h-full object-cover absolute inset-0"
+          style={{ filter: 'blur(1px)' }}
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-10"></div> {/* Optional light overlay */}
+      </div>
+      <div className="flex flex-col justify-center items-center h-full text-center text-white absolute inset-0 p-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-2">
+          <span className="text-orange-500">WE ARE</span><br />
+          <span className="text-orange-500">COSMO</span>{' '}
+          <span className="text-orange-500">COMMUNICATION</span>
         </h1>
-        <p className="text-sm sm:text-lg md:text-xl text-blue-500 font-extrabold italic ">
-          Designers · Photographers · Offset Printers · Publishers · Packagers
+        <p className="text-sm sm:text-lg md:text-xl text-gray-400 font-extrabold italic">
+          Designers · Offset Printers · Publishers · Packagers
         </p>
       </div>
     </div>
