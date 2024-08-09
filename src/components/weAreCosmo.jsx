@@ -23,16 +23,16 @@ const WeAreCosmo = () => {
           src={images[currentImageIndex]}
           alt="Cosmo Communication"
           className="w-full h-full object-cover absolute inset-0"
-          style={{ filter: 'blur(1px)' }}
         />
         <div className="absolute inset-0 bg-black bg-opacity-10"></div> 
       </div>
       <div className="flex flex-col justify-center items-center h-full text-center text-white absolute inset-0 p-4">
-        <h1 className="text-2xl font-sans sm:text-3xl md:text-4xl font-extrabold mb-2 ">
+        <h1 className="text-2xl font-sans sm:text-3xl md:text-4xl font-extrabold mb-2 text-stroke"
+            style={{ '--tw-text-stroke-width': '1px', '--tw-text-stroke-color': 'black' }}>
           <span className="text-orange-400">COSMO</span>{' '}
           <span className="text-orange-400">COMMUNICATION</span>
         </h1>
-        <p className="text-sm sm:text-lg font-serif md:text-xl font-black italic text-white text-stroke"
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-black italic text-blue-900 text-stroke"
            style={{ '--tw-text-stroke-width': '1px', '--tw-text-stroke-color': 'black' }}>
           Designers · Offset Printers · Publishers · Packagers
         </p>

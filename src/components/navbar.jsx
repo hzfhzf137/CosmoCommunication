@@ -45,7 +45,7 @@ const Navbar = () => {
 
     return (
         <div className="bg-cover bg-center fixed top-0 left-0 w-full z-50">
-            <nav className="flex items-center justify-between p-4 sm:p-6 md:p-8 bg-gray-900 bg-opacity-80">
+            <nav className="flex items-center justify-between p-2 sm:p-4 md:p-6 bg-black bg-opacity-80">
                 <div className="flex items-center flex-shrink-0">
                     <img
                         src={cosmoLogo}
@@ -56,19 +56,19 @@ const Navbar = () => {
                 <div className="flex-grow flex items-center justify-end space-x-4">
                     <button
                         onClick={scrollToTop}
-                        className="text-gray-400 font-extrabold text-lg sm:text-xl md:text-2xl pr-2"
+                        className="text-blue-900 font-extrabold text-lg sm:text-xl md:text-2xl pr-2"
                     >
                         <FaArrowUp />
                     </button>
                     <button
                         onClick={toggleFullscreen}
-                        className="text-gray-400 font-extrabold text-lg sm:text-xl md:text-2xl pr-2"
+                        className="text-blue-900 font-extrabold text-lg sm:text-xl md:text-2xl pr-2"
                     >
                         <FaExpand />
                     </button>
                     <button
                         onClick={toggleMenu}
-                        className="text-gray-400 font-extrabold text-xl sm:text-2xl md:text-3xl pr-5"
+                        className="text-blue-900 font-extrabold text-xl sm:text-2xl md:text-3xl pr-5"
                     >
                         <FaBars />
                     </button>
