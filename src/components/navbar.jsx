@@ -62,7 +62,7 @@ const Navbar = () => {
                     </button>
                     <button
                         onClick={toggleFullscreen}
-                        className="text-gray-400 font-extrabold text-lg sm:text-xl md:text-2xl pr-2"
+                        className="hidden sm:block text-gray-400 font-extrabold text-lg sm:text-xl md:text-2xl pr-2"
                     >
                         <FaExpand />
                     </button>
