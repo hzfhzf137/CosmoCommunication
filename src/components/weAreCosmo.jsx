@@ -27,13 +27,11 @@ const WeAreCosmo = () => {
         <div className="absolute inset-0 bg-black bg-opacity-10"></div> 
       </div>
       <div className="flex flex-col justify-center items-center h-full text-center text-white absolute inset-0 p-4">
-        <h1 className="text-2xl font-sans sm:text-3xl md:text-4xl font-extrabold mb-2 text-stroke"
-            style={{ '--tw-text-stroke-width': '1px', '--tw-text-stroke-color': 'black' }}>
-          <span className="text-orange-400">COSMO</span>{' '}
-          <span className="text-orange-400">COMMUNICATION</span>
+        <h1 className="text-2xl font-sans sm:text-3xl md:text-4xl font-extrabold mb-2">
+          <span className="text-orange-500">COSMO</span>{' '}
+          <span className="text-orange-500">COMMUNICATION</span>
         </h1>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-black italic text-blue-900 text-stroke"
-           style={{ '--tw-text-stroke-width': '1px', '--tw-text-stroke-color': 'black' }}>
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black italic text-blue-800">
           Designers · Offset Printers · Publishers · Packagers
         </p>
       </div>
