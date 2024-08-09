@@ -26,7 +26,7 @@ const WeAreCosmo = () => {
         />
         <div className="absolute inset-0 bg-black bg-opacity-10"></div> 
       </div>
-      <div className="flex flex-col justify-center items-center h-full text-center text-white absolute inset-0 p-4">
+      <div className="flex flex-col justify-center items-center h-full text-center text-white absolute inset-0 p-4 backdrop-blur-[2px]">
         <h1 className="text-2xl font-sans sm:text-3xl md:text-4xl font-extrabold mb-2">
           <span className="text-orange-500">COSMO</span>{' '}
           <span className="text-orange-500">COMMUNICATION</span>

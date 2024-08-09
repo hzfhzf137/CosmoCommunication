@@ -89,28 +89,34 @@ const Navbar = () => {
                         >
                             &times;
                         </button>
-                        <ul className="mt-10 text-sm sm:text-base md:text-lg">
-                            <li className="mb-4">
-                                <Link to="/" className="hover:text-gray-300" onClick={closeMenu}>
-                                    Home
-                                </Link>
-                            </li>
-                            <li className="mb-4">
-                                <Link to="/cosmo-communication" className="hover:text-gray-300" onClick={closeMenu}>
-                                    Cosmo Communication
-                                </Link>
-                            </li>
-                            <li className="mb-4">
-                                <Link to="/work" className="hover:text-gray-300" onClick={closeMenu}>
-                                    Work
-                                </Link>
-                            </li>
-                            <li className="mb-4">
-                                <Link to="/contact-us" className="hover:text-gray-300" onClick={closeMenu}>
-                                    Contact Us
-                                </Link>
-                            </li>
-                        </ul>
+                        <div className="flex flex-col h-full justify-between">
+                            <ul className="mt-10 text-sm sm:text-base md:text-lg">
+                                <li className="mb-4">
+                                    <Link to="/" className="hover:text-gray-300" onClick={closeMenu}>
+                                        Home
+                                    </Link>
+                                </li>
+                                <li className="mb-4">
+                                    <Link to="/cosmo-communication" className="hover:text-gray-300" onClick={closeMenu}>
+                                        Cosmo Communication
+                                    </Link>
+                                </li>
+                                <li className="mb-4">
+                                    <Link to="/work" className="hover:text-gray-300" onClick={closeMenu}>
+                                        Work
+                                    </Link>
+                                </li>
+                                <li className="mb-4">
+                                    <Link to="/contact-us" className="hover:text-gray-300" onClick={closeMenu}>
+                                        Contact Us
+                                    </Link>
+                                </li>
+                            </ul>
+                            <div className="text-xs sm:text-sm text-gray-500 border-t border-gray-700 pt-4">
+                                <p>Designed by Huzaifa Mahmood</p>
+                                <p>Email: <a href="mailto:hzfhzf137@gmail.com" className="hover:text-gray-400">hzfhzf137@gmail.com</a></p>
+                            </div>
+                        </div>
                     </div>
                 </>
             )}
