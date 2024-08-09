@@ -31,7 +31,10 @@ const WeAreCosmo = () => {
           <span className="text-orange-500">COSMO</span>{' '}
           <span className="text-orange-500">COMMUNICATION</span>
         </h1>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black italic text-blue-800">
+        <p
+          className="text-sm sm:text-base md:text-lg lg:text-xl font-black italic text-blue-700"
+          style={{ WebkitTextStroke: '1px black', textStroke: '1px black' }} // Add text stroke here
+        >
           Designers · Offset Printers · Publishers · Packagers
         </p>
       </div>
