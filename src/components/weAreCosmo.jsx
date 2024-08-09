@@ -32,10 +32,10 @@ const WeAreCosmo = () => {
           <span className="text-orange-500">COMMUNICATION</span>
         </h1>
         <p
-          className=" text-xs sm:text-sm md:text-base lg:text-lg font-black italic text-gray-400"
-          style={{ WebkitTextStroke: '1px black', textStroke: '1px black' }} // Add text stroke here
+          className="text-xs sm:text-sm md:text-base lg:text-lg font-black italic text-gray-400"
+          style={{ WebkitTextStroke: '0.5px black', textStroke: '0.5px black' }} // Adjusted stroke size
         >
-          Designers · Offset Printers · Publishers · Packagers
+          Designer · Offset Printer · Publisher · Packager
         </p>
       </div>
     </div>
