@@ -45,30 +45,30 @@ const Navbar = () => {
 
     return (
         <div className="bg-cover bg-center fixed top-0 left-0 w-full z-50">
-            <nav className="flex items-center justify-between p-2 sm:p-4 md:p-6 bg-black bg-opacity-80">
-                <div className="flex items-center flex-shrink-0">
+            <nav className="flex items-center justify-between p-4 sm:p-6 md:p-8 bg-black bg-opacity-80">
+                <div className="flex items-center">
                     <img
                         src={cosmoLogo}
                         alt="company logo"
-                        className="w-32 h-8 sm:w-48 sm:h-12 md:w-56 md:h-14 object-contain"
+                        className="w-32 h-12 object-contain self-center"
                     />
                 </div>
-                <div className="flex-grow flex items-center justify-end space-x-4">
+                <div className="flex items-center space-x-4">
                     <button
                         onClick={scrollToTop}
-                        className="text-gray-400 font-extrabold text-lg sm:text-xl md:text-2xl pr-2"
+                        className="text-gray-400 font-extrabold text-lg sm:text-xl md:text-2xl pr-2 hover:border-b-2 hover:border-orange-500"
                     >
                         <FaArrowUp />
                     </button>
                     <button
                         onClick={toggleFullscreen}
-                        className="hidden sm:block text-gray-400 font-extrabold text-lg sm:text-xl md:text-2xl pr-2"
+                        className="hidden sm:block text-gray-400 font-extrabold text-lg sm:text-xl md:text-2xl pr-2 hover:border-b-2 hover:border-orange-500"
                     >
                         <FaExpand />
                     </button>
                     <button
                         onClick={toggleMenu}
-                        className="text-gray-400 font-extrabold text-xl sm:text-2xl md:text-3xl pr-5"
+                        className="text-gray-400 font-extrabold text-xl sm:text-2xl md:text-3xl hover:border-b-2 hover:border-orange-500"
                     >
                         <FaBars />
                     </button>
@@ -92,22 +92,22 @@ const Navbar = () => {
                         <div className="flex flex-col h-full justify-between">
                             <ul className="mt-10 text-sm sm:text-base md:text-lg">
                                 <li className="mb-4">
-                                    <Link to="/" className="hover:text-gray-300" onClick={closeMenu}>
+                                    <Link to="/" className="hover:text-gray-300 hover:border-b-2 hover:border-orange-500" onClick={closeMenu}>
                                         Home
                                     </Link>
                                 </li>
                                 <li className="mb-4">
-                                    <Link to="/cosmo-communication" className="hover:text-gray-300" onClick={closeMenu}>
+                                    <Link to="/cosmo-communication" className="hover:text-gray-300 hover:border-b-2 hover:border-orange-500" onClick={closeMenu}>
                                         Cosmo Communication
                                     </Link>
                                 </li>
                                 <li className="mb-4">
-                                    <Link to="/work" className="hover:text-gray-300" onClick={closeMenu}>
+                                    <Link to="/work" className="hover:text-gray-300 hover:border-b-2 hover:border-orange-500" onClick={closeMenu}>
                                         Work
                                     </Link>
                                 </li>
                                 <li className="mb-4">
-                                    <Link to="/contact-us" className="hover:text-gray-300" onClick={closeMenu}>
+                                    <Link to="/contact-us" className="hover:text-gray-300 hover:border-b-2 hover:border-orange-500" onClick={closeMenu}>
                                         Contact Us
                                     </Link>
                                 </li>
