@@ -1,10 +1,12 @@
 import React from 'react';
 
-const ImageCard = ({ imageUrl }) => {
+const ImageCard = ({ imageUrl, onClick }) => {
     return (
-        // Adjusted responsive width: wider for small screens, narrower for larger screens
         <div className="w-1/2 sm:w-1/3 md:w-1/5 lg:w-1/6 px-1 pb-2">
-            <div className="h-48 md:h-52 lg:h-56 bg-gray-900 overflow-hidden relative group">
+            <div 
+                className="h-48 md:h-52 lg:h-56 bg-gray-900 overflow-hidden relative group cursor-pointer"
+                onClick={onClick}
+            >
                 <img
                     src={imageUrl}
                     alt="Creation"
