@@ -26,10 +26,9 @@ const WeAreCosmo = () => {
         />
         <div className="absolute inset-0 bg-black bg-opacity-10"></div>
       </div>
-      <div className="flex flex-col justify-center items-center h-full text-center text-white absolute inset-0 p-6 backdrop-blur-[0px]">
+      <div className="flex flex-col justify-center items-center h-full text-center text-white absolute inset-0 p-6 backdrop-blur-[2px]">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6">
-          <span className="text-orange-500">COSMO</span>
-          <span className="text-orange-500">COMMUNICATION</span>
+          <span className="text-orange-500">COSMO COMMUNICATION</span>
         </h1>
         <div className="grid grid-cols-2 gap-4 text-gray-200">
           <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black italic text-center" style={{ WebkitTextStroke: '1px black', textStroke: '1px black' }}>

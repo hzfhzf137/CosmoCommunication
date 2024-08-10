@@ -43,12 +43,12 @@ const ContactUsForm = () => {
   };
 
   return (
-    <div className="bg-blue-900 w-screen md:w-1/2 p-4 flex flex-col justify-center h-screen">
+    <div className="bg-blue-900 w-screen md:w-1/2 p-4 flex flex-col justify-center md:h-1/2">
       <form 
-        className="flex flex-col space-y-3 ml-5 mr-5"
+        className="flex flex-col space-y-3 ml-4 mr-4"
         onSubmit={handleSubmit} // Use JavaScript to handle form submission
       >
-        <h1 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-4 text-center">SEND YOUR MESSAGE HERE</h1>
+        <h1 className="text-md md:text-lg lg:text-xl font-bold text-white mb-4 text-center">SEND YOUR MESSAGE HERE</h1>
         
         <label className="font-semibold text-white" htmlFor="name">NAME</label>
         <input 
@@ -57,7 +57,16 @@ const ContactUsForm = () => {
           name="name"
           required 
           placeholder="Name" 
-          className="p-2 border border-gray-400 rounded-xl bg-blue-800 text-white placeholder-gray-300 focus:outline-none focus:border-gray-500"
+          style={{ 
+            padding: '0.5rem', 
+            borderColor: '#4a5568', 
+            borderRadius: '0.75rem', 
+            backgroundColor: '#2b6cb0', 
+            color: 'white', 
+            width: '75%', 
+            marginLeft: 'auto', 
+            marginRight: 'auto' 
+          }}
         />
 
         <label className="font-semibold text-white" htmlFor="email">EMAIL</label>
@@ -67,16 +76,16 @@ const ContactUsForm = () => {
           name="email" 
           required
           placeholder="Email" 
-          className="p-2 border border-gray-400 rounded-xl bg-blue-800 text-white placeholder-gray-300 focus:outline-none focus:border-gray-500"
-        />
-
-        <label className="font-semibold text-white" htmlFor="subject">SUBJECT</label>
-        <input 
-          type="text" 
-          id="subject" 
-          name="subject" 
-          placeholder="Subject" 
-          className="p-2 border border-gray-400 rounded-xl bg-blue-800 text-white placeholder-gray-300 focus:outline-none focus:border-gray-500"
+          style={{ 
+            padding: '0.5rem', 
+            borderColor: '#4a5568', 
+            borderRadius: '0.75rem', 
+            backgroundColor: '#2b6cb0', 
+            color: 'white', 
+            width: '75%', 
+            marginLeft: 'auto', 
+            marginRight: 'auto' 
+          }}
         />
 
         <label className="font-semibold text-white" htmlFor="message">MESSAGE</label>
@@ -85,13 +94,30 @@ const ContactUsForm = () => {
           name="message" 
           placeholder="Message"
           required 
-          className="p-2 border border-gray-400 rounded-xl bg-blue-800 text-white placeholder-gray-300 h-28 focus:outline-none focus:border-gray-500"
+          style={{ 
+            padding: '0.5rem', 
+            borderColor: '#4a5568', 
+            borderRadius: '0.75rem', 
+            backgroundColor: '#2b6cb0', 
+            color: 'white', 
+            height: '6rem', 
+            width: '75%', 
+            marginLeft: 'auto', 
+            marginRight: 'auto' 
+          }}
         />
         
         <div className="flex justify-center mt-4">
           <button 
             type="submit" 
-            className="bg-orange-400 text-white w-2/3 rounded-xl py-2 px-4 mt-2 hover:bg-orange-600 transition-colors duration-200"
+            style={{  
+              color: 'white', 
+              width: '50%', 
+              borderRadius: '0.75rem', 
+              padding: '0.5rem 1rem', 
+              marginTop: '0.5rem' 
+            }}
+            className="bg-orange-400 hover:bg-orange-600 transition-colors duration-200"
             disabled={isSubmitting}
           >
             {isSubmitting ? 'Submitting...' : 'Send'}
