@@ -17,30 +17,37 @@ const WeAreCosmo = () => {
   }, [images.length, slideInterval]);
 
   return (
-    <div className="relative h-[300px] sm:h-[400px] md:h-[500px] w-screen overflow-hidden">
-      <div className="absolute inset-0">
+    <div className="relative w-screen h-[100vh]">
+      {/* Fixed Background Image Slideshow */}
+      <div className="fixed top-0 left-0 w-full h-full z-[-1]">
         <img
           src={images[currentImageIndex]}
           alt="Cosmo Communication"
-          className="w-full h-full object-cover absolute inset-0"
+          className="w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+        {/* Darker overlay for better text contrast */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       </div>
-      <div className="flex flex-col justify-center items-center h-full text-center text-white absolute inset-0 p-6 backdrop-blur-[2px]">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6">
+
+      {/* Overlay Content */}
+      <div className="flex flex-col justify-center items-center h-full text-center text-white p-6 backdrop-blur-[0px]">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 animate-slide-in">
           <span className="text-orange-500">COSMO COMMUNICATION</span>
         </h1>
-        <div className="grid grid-cols-2 gap-4 text-gray-200">
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black italic text-center" style={{ WebkitTextStroke: '1px black', textStroke: '1px black' }}>
+        <div className="flex gap-2 text-gray-200 animate-fade-in text-shadow-lg">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black italic">
             Designers
           </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black italic text-center" style={{ WebkitTextStroke: '1px black', textStroke: '1px black' }}>
+          <span className="mx-1">•</span>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black italic">
             Offset Printers
           </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black italic text-center" style={{ WebkitTextStroke: '1px black', textStroke: '1px black' }}>
+          <span className="mx-1">•</span>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black italic">
             Publishers
           </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black italic text-center" style={{ WebkitTextStroke: '1px black', textStroke: '1px black' }}>
+          <span className="mx-1">•</span>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-black italic">
             Packagers
           </p>
         </div>

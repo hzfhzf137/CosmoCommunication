@@ -1,21 +1,25 @@
 import React from 'react';
 
 const ImageCard = ({ imageUrl, onClick }) => {
-    return (
-        <div className="w-1/2 sm:w-1/3 md:w-1/5 lg:w-1/6 px-1 pb-2">
-            <div 
-                className="h-48 md:h-52 lg:h-56 bg-gray-900 overflow-hidden relative group cursor-pointer"
-                onClick={onClick}
-            >
-                <img
-                    src={imageUrl}
-                    alt="Creation"
-                    className="w-full h-full transform group-hover:scale-125 transition-transform duration-300 ease-in-out"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 ease-in-out"></div>
-            </div>
+  return (
+    <div className="p-3">
+      <div 
+        className="relative bg-gray-900 rounded-lg shadow-lg overflow-hidden group cursor-pointer transform transition-transform hover:scale-105"
+        onClick={onClick}
+        style={{ width: '250px', height: '250px' }} // Fixed width and height for consistency
+      >
+        <img
+          src={imageUrl}
+          alt="Creation"
+          className="w-full h-full object-contain transition-transform duration-300 ease-in-out"
+        />
+        {/* Hover Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 ease-in-out rounded-lg flex items-end p-4">
+          <p className="text-white text-sm font-semibold">View Image</p>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default ImageCard;

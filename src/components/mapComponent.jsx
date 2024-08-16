@@ -6,7 +6,7 @@ import L from 'leaflet';
 // Define office coordinates
 const officeCoordinates = {
   lat: 31.5669,
-  lng: 74.3260
+  lng: 74.3260,
 };
 
 // Set zoom level
@@ -17,7 +17,7 @@ const defaultIcon = new L.Icon({
   iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
   iconSize: [25, 41], // Size of the icon
   iconAnchor: [12, 41], // Anchor point of the icon
-  popupAnchor: [1, -34] // Anchor point of the popup
+  popupAnchor: [1, -34], // Anchor point of the popup
 });
 
 const MapComponent = () => {
@@ -26,7 +26,8 @@ const MapComponent = () => {
   };
 
   return (
-    <div className="pt-32 pb-5 flex justify-center bg-gray-900 w-screen">
+    <div className="pt-36 pb-16 flex flex-col items-center bg-gray-900 w-screen">
+      <h1 className="text-white text-lg mb-6">Tap the marker below to view our location on Google Maps</h1>
       <div className="flex justify-center">
         <MapContainer
           center={officeCoordinates}
@@ -41,7 +42,7 @@ const MapComponent = () => {
             <Popup>
               <div>
                 Here is our office! <br />
-                Do you want to open this location in Google Maps?
+                Would you like to open this location in Google Maps?
                 <div className="mt-2 flex justify-center">
                   <button
                     onClick={handleYesClick}
