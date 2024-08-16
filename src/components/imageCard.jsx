@@ -6,7 +6,7 @@ const ImageCard = ({ imageUrl, onClick }) => {
       <div 
         className="relative bg-gray-900 rounded-lg shadow-lg overflow-hidden group cursor-pointer transform transition-transform hover:scale-105"
         onClick={onClick}
-        style={{ width: '250px', height: '250px' }} // Fixed width and height for consistency
+        style={{ width: '100%', height: '250px' }} // Full width and fixed height
       >
         <img
           src={imageUrl}

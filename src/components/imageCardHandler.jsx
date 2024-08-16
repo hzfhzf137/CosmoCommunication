@@ -1,4 +1,3 @@
-// ImageCardHandler.js
 import React, { useState, useRef, useEffect } from 'react';
 import ImageCard from '../components/imageCard';
 import image1 from '../assets/images/imageCreation2.jpg';
@@ -34,7 +33,7 @@ const ImageCardHandler = () => {
           observer.unobserve(entries[0].target); // Stop observing once visible
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.01 }
     );
 
     if (galleryRef.current) {
@@ -59,7 +58,7 @@ const ImageCardHandler = () => {
   return (
     <div 
       ref={galleryRef} 
-      className={`w-screen flex flex-wrap justify-center bg-gray-900 pt-10 pb-5 transition-opacity duration-1000 ${
+      className={`w-screen grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 bg-gray-900 pt-10 pb-5 transition-opacity duration-1000 ${
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
     >
