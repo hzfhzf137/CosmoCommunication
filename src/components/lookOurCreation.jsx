@@ -14,7 +14,7 @@ const LookOurCreation = () => {
           }
         });
       },
-      { threshold: 0.8 } 
+      { threshold: 0.5 } 
     );
 
     if (sectionRef.current) {

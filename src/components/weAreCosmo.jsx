@@ -17,9 +17,9 @@ const WeAreCosmo = () => {
   }, [images.length, slideInterval]);
 
   return (
-    <div className="relative w-screen h-[100vh]">
+    <div className="relative w-screen h-screen overflow-hidden">
       {/* Fixed Background Image Slideshow */}
-      <div className="fixed top-0 left-0 w-full h-full z-[-1]">
+      <div className="fixed top-0 left-0 w-screen h-screen z-[-1]">
         <img
           src={images[currentImageIndex]}
           alt="Cosmo Communication"

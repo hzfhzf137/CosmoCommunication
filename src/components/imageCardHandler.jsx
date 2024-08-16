@@ -34,7 +34,7 @@ const ImageCardHandler = () => {
           observer.unobserve(entries[0].target); // Stop observing once visible
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
     if (galleryRef.current) {
