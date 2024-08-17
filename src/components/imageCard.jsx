@@ -1,10 +1,15 @@
 import React from 'react';
 
-const ImageCard = ({ imageUrl, onClick }) => {
+const ImageCard = ({ imageUrl, onClick, isVisible, id }) => {
   return (
-    <div className="p-3">
-      <div 
-        className="relative bg-gray-900 rounded-lg shadow-lg overflow-hidden group cursor-pointer transform transition-transform hover:scale-105"
+    <div
+      className="p-3"
+      data-id={id} // Add data attribute for visibility detection
+    >
+      <div
+        className={`relative bg-gray-900 rounded-lg shadow-lg overflow-hidden group cursor-pointer transform transition-transform hover:scale-105 ${
+          isVisible ? 'opacity-100' : 'opacity-0'
+        } transition-opacity duration-1000 ease-in-out`}
         onClick={onClick}
         style={{ width: '100%', height: '250px' }} // Full width and fixed height
       >

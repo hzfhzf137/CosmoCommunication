@@ -11,7 +11,7 @@ import image8 from '../assets/images/imageCreation8.jfif';
 
 const ImageCardHandler = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [visibleImages, setVisibleImages] = useState({});
   const galleryRef = useRef(null);
 
   const imagesData = [
@@ -22,27 +22,36 @@ const ImageCardHandler = () => {
     { id: 5, imageUrl: image5 },
     { id: 6, imageUrl: image6 },
     { id: 7, imageUrl: image7 },
-    { id: 8, imageUrl: image8 }
+    { id: 8, imageUrl: image8 },
   ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entries[0].target); // Stop observing once visible
-        }
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleImages((prevVisible) => ({
+              ...prevVisible,
+              [entry.target.dataset.id]: true,
+            }));
+            observer.unobserve(entry.target); // Stop observing once visible
+          }
+        });
       },
-      { threshold: 0.01 }
+      { threshold: 0.3 }
     );
 
     if (galleryRef.current) {
-      observer.observe(galleryRef.current);
+      galleryRef.current.childNodes.forEach((child) => {
+        observer.observe(child);
+      });
     }
 
     return () => {
       if (galleryRef.current) {
-        observer.unobserve(galleryRef.current);
+        galleryRef.current.childNodes.forEach((child) => {
+          observer.unobserve(child);
+        });
       }
     };
   }, []);
@@ -56,28 +65,28 @@ const ImageCardHandler = () => {
   };
 
   return (
-    <div 
-      ref={galleryRef} 
-      className={`w-screen grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 bg-gray-900 pt-10 pb-5 transition-opacity duration-1000 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
+    <div
+      ref={galleryRef}
+      className="w-screen grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 bg-gray-900 pt-10 pb-5"
     >
       {imagesData.map((image) => (
         <ImageCard
           key={image.id}
           imageUrl={image.imageUrl}
           onClick={() => handleImageClick(image.imageUrl)}
+          isVisible={visibleImages[image.id]}
+          id={image.id}
         />
       ))}
 
       {selectedImage && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
           onClick={closeModal}
         >
-          <div 
+          <div
             className="relative max-h-[75vh] max-w-[75vw]"
-            onClick={(e) => e.stopPropagation()} 
+            onClick={(e) => e.stopPropagation()}
           >
             <img
               src={selectedImage}

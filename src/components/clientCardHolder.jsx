@@ -19,7 +19,7 @@ const ClientCardHolder = () => {
           observer.unobserve(entries[0].target); // Stop observing once it's visible
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.5 }
     );
 
     if (containerRef.current) {
@@ -34,19 +34,23 @@ const ClientCardHolder = () => {
   }, []);
 
   return (
-    <div 
-      ref={containerRef} 
-      className={`bg-black pt-32 pb-28 w-screen py-12 transition-opacity duration-1000 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
+    <div
+      className={`bg-black pt-32 pb-28 w-screen py-12`}
     >
-      <h2 className="text-white text-2xl sm:text-3xl font-bold text-center mb-10">
-        OUR PROMINENT CLIENTS
-      </h2>
-      <div className="flex justify-center gap-10 flex-wrap">
-        {clients.map((logo, index) => (
-          <ClientCard key={index} logoUrl={logo} isVisible={isVisible} />
-        ))}
+      <div
+        ref={containerRef}
+        className={`transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'
+          }`}
+
+      >
+        <h2 className="text-white text-2xl sm:text-3xl font-bold text-center mb-10">
+          OUR PROMINENT CLIENTS
+        </h2>
+        <div className="flex justify-center gap-10 flex-wrap">
+          {clients.map((logo, index) => (
+            <ClientCard key={index} logoUrl={logo} isVisible={isVisible} />
+          ))}
+        </div>
       </div>
     </div>
   );
