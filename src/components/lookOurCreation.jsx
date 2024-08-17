@@ -14,7 +14,7 @@ const LookOurCreation = () => {
           }
         });
       },
-      { threshold: 0.5 } 
+      { threshold: 0.3 } 
     );
 
     if (sectionRef.current) {
@@ -34,7 +34,7 @@ const LookOurCreation = () => {
       className="bg-black text-white w-screen text-center p-8 sm:p-12 md:p-16 lg:p-24"
     >
       <p
-        className={`mb-4 sm:mb-6 md:mb-8 lg:mb-10 text-[10px] sm:text-xs md:text-sm lg:text-base transition-opacity duration-1000 ${
+        className={` mb-4 sm:mb-10 md:mb-12 lg:mb-14 text-[10px] sm:text-xs md:text-sm lg:text-base transition-opacity duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
@@ -51,7 +51,7 @@ const LookOurCreation = () => {
       </p>
 
       <h2
-        className={`text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 transition-opacity duration-1000 ${
+        className={` text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-6 sm:mb-8 md:mb-10 lg:mb-12 transition-opacity duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
