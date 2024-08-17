@@ -43,88 +43,58 @@ const ContactUsForm = () => {
   };
 
   return (
-    <div className="bg-blue-900 w-screen md:w-1/2 p-4 flex flex-col justify-center md:h-1/2">
-      <form 
-        className="flex flex-col space-y-3 ml-4 mr-4"
+    <div className="bg-blue-900 w-screen md:w-1/2 p-8 flex flex-col justify-center">
+      <form
+        className="flex flex-col space-y-4"
         onSubmit={handleSubmit} // Use JavaScript to handle form submission
       >
-        <h1 className="text-md md:text-lg lg:text-xl font-bold text-white mb-4 text-center">SEND YOUR MESSAGE HERE</h1>
-        
-        <label className="font-semibold text-white" htmlFor="name">NAME</label>
-        <input 
-          type="text" 
+        <h1 className="text-lg md:text-xl font-bold text-white mb-6 text-center">
+          Send Us a Message
+        </h1>
+
+        <label className="font-semibold text-white" htmlFor="name">Name</label>
+        <input
+          type="text"
           id="name"
           name="name"
-          required 
-          placeholder="Name" 
-          style={{ 
-            padding: '0.5rem', 
-            borderColor: '#4a5568', 
-            borderRadius: '0.75rem', 
-            backgroundColor: '#2b6cb0', 
-            color: 'white', 
-            width: '75%', 
-            marginLeft: 'auto', 
-            marginRight: 'auto' 
-          }}
-        />
-
-        <label className="font-semibold text-white" htmlFor="email">EMAIL</label>
-        <input 
-          type="email" 
-          id="email" 
-          name="email" 
           required
-          placeholder="Email" 
-          style={{ 
-            padding: '0.5rem', 
-            borderColor: '#4a5568', 
-            borderRadius: '0.75rem', 
-            backgroundColor: '#2b6cb0', 
-            color: 'white', 
-            width: '75%', 
-            marginLeft: 'auto', 
-            marginRight: 'auto' 
-          }}
+          placeholder="Your Name"
+          className="p-3 border border-gray-600 rounded bg-blue-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
 
-        <label className="font-semibold text-white" htmlFor="message">MESSAGE</label>
-        <textarea 
-          id="message" 
-          name="message" 
-          placeholder="Message"
-          required 
-          style={{ 
-            padding: '0.5rem', 
-            borderColor: '#4a5568', 
-            borderRadius: '0.75rem', 
-            backgroundColor: '#2b6cb0', 
-            color: 'white', 
-            height: '6rem', 
-            width: '75%', 
-            marginLeft: 'auto', 
-            marginRight: 'auto' 
-          }}
+        <label className="font-semibold text-white" htmlFor="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Your Email"
+          className="p-3 border border-gray-600 rounded bg-blue-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
-        
+
+        <label className="font-semibold text-white" htmlFor="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+          className="p-3 border border-gray-600 rounded bg-blue-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-400"
+          rows="6"
+        />
+
         <div className="flex justify-center mt-4">
-          <button 
-            type="submit" 
-            style={{  
-              color: 'white', 
-              width: '50%', 
-              borderRadius: '0.75rem', 
-              padding: '0.5rem 1rem', 
-              marginTop: '0.5rem' 
-            }}
-            className="bg-orange-400 hover:bg-orange-600 transition-colors duration-200"
+          <button
+            type="submit"
+            className="bg-orange-400 text-white px-6 py-2 rounded hover:bg-orange-600 transition-colors duration-200"
             disabled={isSubmitting}
           >
             {isSubmitting ? 'Submitting...' : 'Send'}
           </button>
         </div>
       </form>
-      {submitMessage && <div className="mt-4 text-center text-white">{submitMessage}</div>}
+      {submitMessage && (
+        <div className="mt-4 text-center text-white">{submitMessage}</div>
+      )}
     </div>
   );
 };

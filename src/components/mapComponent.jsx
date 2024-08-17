@@ -22,17 +22,22 @@ const defaultIcon = new L.Icon({
 
 const MapComponent = () => {
   const handleYesClick = () => {
-    window.open(`https://www.google.com/maps/search/?api=1&query=${officeCoordinates.lat},${officeCoordinates.lng}`, '_blank');
+    window.open(
+      `https://www.google.com/maps/search/?api=1&query=${officeCoordinates.lat},${officeCoordinates.lng}`,
+      '_blank'
+    );
   };
 
   return (
-    <div className="pt-36 pb-16 flex flex-col items-center bg-gray-900 w-screen">
-      <h1 className="text-white text-lg mb-6">Tap the marker below to view our location on Google Maps</h1>
+    <div className="pt-36 pb-16 sticky bg-gray-900 flex flex-col items-center w-screen">
+      <h1 className="text-white text-lg mb-6 text-center">
+        Tap the marker below to view our location on Google Maps
+      </h1>
       <div className="flex justify-center">
         <MapContainer
           center={officeCoordinates}
           zoom={zoom}
-          className="w-[50vw] h-[calc(60vh-64px)] sticky"
+          className="w-[60vw] h-[60vh] rounded-lg shadow-lg"
         >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -46,7 +51,7 @@ const MapComponent = () => {
                 <div className="mt-2 flex justify-center">
                   <button
                     onClick={handleYesClick}
-                    className="bg-blue-500 text-white px-4 py-2 rounded"
+                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200"
                   >
                     Yes
                   </button>

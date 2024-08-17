@@ -45,7 +45,7 @@ const Navbar = () => {
 
     return (
         <header className="bg-black bg-opacity-50 fixed top-0 left-0 w-full z-50 shadow-lg">
-            <nav className="flex items-center justify-between p-1 sm:p-3 md:p-5">
+            <nav className="flex items-center justify-between p-2 sm:p-3 md:p-5">
                 <div className="flex items-center">
                     <img
                         src={cosmoLogo}

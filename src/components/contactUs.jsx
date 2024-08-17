@@ -4,18 +4,19 @@ import MapComponent from './mapComponent';
 import Address from './address';
 import ContactUsForm from './contactUsForm';
 import Footer from './footer';
+
 const ContactUs = () => {
-    return (
-        <React.Fragment>
-            <Navbar />
-            <MapComponent />
-            <div className="flex flex-col w-screen md:flex-row">
-                <Address />
-                <ContactUsForm />
-            </div>
-            <Footer/>
-        </React.Fragment>
-    );
+  return (
+    <>
+      <Navbar />
+      <MapComponent />
+      <div className="flex flex-col md:flex-row w-screen">
+        <Address />
+        <ContactUsForm />
+      </div>
+      <Footer />
+    </>
+  );
 };
 
 export default ContactUs;

@@ -67,7 +67,7 @@ const ImageCardHandler = () => {
   return (
     <div
       ref={galleryRef}
-      className="w-screen grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 bg-gray-900 pt-10 pb-5"
+      className="w-screen grid grid-cols-2 rounded-sm sm:grid-cols-3 md:grid-cols-4 gap-4 bg-gray-900 pt-10 pb-5"
     >
       {imagesData.map((image) => (
         <ImageCard
@@ -81,7 +81,7 @@ const ImageCardHandler = () => {
 
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-75 rounded-sm flex items-center justify-center z-50"
           onClick={closeModal}
         >
           <div
