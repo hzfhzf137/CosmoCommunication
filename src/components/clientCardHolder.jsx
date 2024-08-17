@@ -35,21 +35,23 @@ const ClientCardHolder = () => {
 
   return (
     <div
-      className={`bg-black pt-32 pb-28 w-screen py-12`}
+      className="bg-black pt-32 pb-28 w-screen"
     >
       <div
         ref={containerRef}
-        className={`transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'
-          }`}
-
+        className={`transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
       >
         <h2 className="text-white text-2xl sm:text-3xl font-bold text-center mb-10">
           OUR PROMINENT CLIENTS
         </h2>
-        <div className="flex justify-center gap-10 flex-wrap">
-          {clients.map((logo, index) => (
-            <ClientCard key={index} logoUrl={logo} isVisible={isVisible} />
-          ))}
+        <div className="overflow-hidden relative">
+          <div
+            className={`flex ${isVisible ? 'animate-slideHorizontal' : ''} gap-8 md:gap-12`}
+          >
+            {clients.map((logo, index) => (
+              <ClientCard key={index} logoUrl={logo} isVisible={isVisible} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

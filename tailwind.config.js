@@ -41,14 +41,19 @@ export default {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },
+        slideHorizontal: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
       },
       animation: {
         slideInLeft: 'slideInLeft 0.8s ease-out',
         spin: 'spin 1s linear 1',
-        pulseInfinite: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite', // Added infinite pulse animation
+        pulseInfinite: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         fadeInUp: 'fadeInUp 0.8s ease-out forwards',
         float: 'float 3s ease-in-out infinite',
         rotateSlow: 'rotateSlow 10s linear infinite',
+        slideHorizontal: 'slideHorizontal 10s linear infinite',
       },
       boxShadow: {
         'text-shadow-lg': '2px 2px 4px rgba(0, 0, 0, 0.8)',

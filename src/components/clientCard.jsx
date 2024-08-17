@@ -10,7 +10,7 @@ const ClientCard = ({ logoUrl, isVisible }) => {
       <img 
         src={logoUrl} 
         alt="Client Logo" 
-        className="object-contain h-full w-full animate-pulseInfinite" 
+        className="object-contain h-full w-full" 
       />
     </div>
   );
