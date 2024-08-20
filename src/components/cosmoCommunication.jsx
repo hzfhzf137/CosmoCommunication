@@ -1,13 +1,18 @@
 import React from 'react';
 import Navbar from './navbar';
+import CeoMessage from './ceoMessage';
+import CeoImage from './ceoImage';
 
 const CosmoCommunication = () => {
-    return (
-        <React.Fragment>
-            <Navbar/>
-            <h1 className=' mt-80 text-4xl font-extrabold text-blue-800'>Cosmo Communication</h1>
-        </React.Fragment>
-    );
+  return (
+    <React.Fragment>
+      <Navbar />
+      <div className="flex flex-col md:flex-row w-screen h-screen">
+        <CeoMessage />
+        <CeoImage />
+      </div>
+    </React.Fragment>
+  );
 };
 
 export default CosmoCommunication;

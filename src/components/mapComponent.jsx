@@ -30,7 +30,7 @@ const MapComponent = () => {
 
   return (
     <div className="pt-36 pb-16 sticky bg-gray-900 flex flex-col items-center w-screen">
-      <h1 className="text-white text-lg mb-6 text-center">
+      <h1 className="text-gray-400 text-lg mb-6 pl-10 pr-10 italic text-center">
         Tap the marker below to view our location on Google Maps
       </h1>
       <div className="flex justify-center">
