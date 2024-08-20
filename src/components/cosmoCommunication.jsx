@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './navbar';
 import CeoMessage from './ceoMessage';
 import CeoImage from './ceoImage';
+import Footer from './footer';
 
 const CosmoCommunication = () => {
   return (
@@ -11,6 +12,7 @@ const CosmoCommunication = () => {
         <CeoMessage />
         <CeoImage />
       </div>
+      <Footer/>
     </React.Fragment>
   );
 };

@@ -70,4 +70,9 @@ export default {
       addUtilities(newUtilities, ['responsive', 'hover']);
     },
   ],
+  corePlugins: {
+    textAlign: true,
+    textJustify: true,
+  },
+
 };
