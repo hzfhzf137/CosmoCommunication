@@ -17,20 +17,20 @@ const WeAreCosmo = () => {
   }, [images.length, slideInterval]);
 
   return (
-    <div className="relative w-screen  overflow-hidden">
+    <div className="relative w-screen h-screen overflow-hidden">
       {/* Fixed Background Image Slideshow */}
-      <div className="fixed top-0 left-0 w-screen  z-[-1]">
+      <div className="fixed top-0 left-0 h-full w-screen z-[-1]">
         <img
           src={images[currentImageIndex]}
           alt="Cosmo Communication"
-          className="w-screen  object-cover transition-opacity duration-1000 ease-in-out"
+          className="w-screen h-full object-cover transition-opacity duration-1000 ease-in-out"
         />
         {/* Darker overlay for better text contrast */}
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
 
-      {/* Overlay Content */}
-      <div className="flex flex-col mt-[15%] mb-[5%] items-center  text-center text-white p-6">
+      {/* Overlay Content - Centered */}
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-6">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 animate-slide-in text-shadow-lg">
           <span className="text-orange-500">COSMO COMMUNICATION</span>
         </h1>
