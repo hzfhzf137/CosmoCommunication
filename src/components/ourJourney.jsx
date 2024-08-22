@@ -31,7 +31,7 @@ const OurJourney = () => {
   return (
     <div
       ref={sectionRef}
-      className="flex flex-col justify-center items-start bg-gray-100 p-6 md:p-10 w-screen md:w-1/2 h-[50vh] shadow-lg"
+      className="  flex flex-col  justify-center items-start bg-gray-300 p-6 md:p-10 w-screen md:w-1/2 h-[50vh] shadow-lg"
     >
       <h2
         className={`text-xl md:text-2xl text-gray-800 font-semibold mb-3 md:mb-5 border-b-2 border-gray-500 pb-2 text-center w-full transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}

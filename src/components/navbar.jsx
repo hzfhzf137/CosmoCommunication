@@ -111,7 +111,7 @@ const Navbar = () => {
                                         Cosmo Communication
                                     </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link
                                         to="/work"
                                         className="hover:text-gray-300 hover:border-b-2 hover:border-orange-500 transition duration-300"
@@ -119,7 +119,7 @@ const Navbar = () => {
                                     >
                                         Work
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
                                     <Link
                                         to="/contact-us"
