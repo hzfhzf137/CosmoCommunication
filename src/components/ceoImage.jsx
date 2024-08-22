@@ -30,7 +30,7 @@ const CeoImage = () => {
   }, []);
 
   return (
-    <div className="relative flex items-center bg-black justify-center w-full md:w-1/2 h-full">
+    <div className="relative flex items-center bg-black justify-center w-full md:w-1/2 h-[80vh] pt-10">
       <img
         ref={imageRef}
         src={ceoImg}

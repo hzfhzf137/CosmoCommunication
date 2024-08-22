@@ -31,7 +31,7 @@ const CeoMessage = () => {
   return (
     <div
       ref={sectionRef}
-      className="flex items-center justify-center bg-black text-gray-300 p-6 pt-20 w-full md:w-1/2 h-full"
+      className="flex items-center justify-center bg-black text-gray-300 p-6 pt-20 w-full md:w-1/2 h-[80vh]"
     >
       <div
         className={`max-w-lg px-4 transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
