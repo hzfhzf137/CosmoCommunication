@@ -34,9 +34,14 @@ const WhatWeDo = () => {
       className=" flex flex-col  justify-center items-start bg-gray-400 p-6 md:p-10 w-screen md:w-1/2 h-[50vh] shadow-lg"
     >
       <h2
+        className={`text-xl md:text-2xl text-gray-800 font-semibold  text-center w-full transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+      >
+        WHAT WE DO AT
+      </h2>
+      <h2
         className={`text-xl md:text-2xl text-gray-800 font-semibold mb-3 md:mb-5 border-b-2 border-gray-500 pb-2 text-center w-full transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
       >
-        WHAT WE DO AT LE' TOPICAL
+       Cosmo Communication
       </h2>
       <p
         className={`text-sm md:text-base leading-relaxed text-gray-600 text-justify transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
