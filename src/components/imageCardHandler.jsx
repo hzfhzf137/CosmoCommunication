@@ -34,7 +34,7 @@ const ImageCardHandler = () => {
               ...prevVisible,
               [entry.target.dataset.id]: true,
             }));
-            observer.unobserve(entry.target); // Stop observing once visible
+            observer.unobserve(entry.target); 
           }
         });
       },
@@ -65,9 +65,15 @@ const ImageCardHandler = () => {
   };
 
   return (
+    <div className='bg-gray-900 w-screen'>
+      <h2
+        className={`text-base sm:text-lg md:text-xl lg:text-2xl font-bold pt-10 text-white`}
+      >
+        Our Recent Creation
+      </h2>
     <div
       ref={galleryRef}
-      className="w-screen grid grid-cols-2 rounded-sm sm:grid-cols-3 md:grid-cols-4 gap-4 bg-gray-900 pt-10 pb-5"
+      className="grid grid-cols-2 rounded-sm sm:grid-cols-3 md:grid-cols-4 gap-4  pt-10 pb-5"
     >
       {imagesData.map((image) => (
         <ImageCard
@@ -96,6 +102,7 @@ const ImageCardHandler = () => {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };

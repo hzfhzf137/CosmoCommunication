@@ -44,11 +44,11 @@ const CeoMessage = () => {
         <p
           className={`text-base md:text-lg leading-relaxed text-gray-400 text-justify transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
         >
-          Established in July, 1995, Cosmo Communication was initially set up as a design house by Mr. Mahmood Zafar, 
-          the CEO of Cosmo Communication, himself a graduate in design and printing from NCA, Lahore. 
-          With firm commitment and passion to set out distinctive from the rest of the printing houses, 
-          over the span of two decades, Cosmo Communication has set out a benchmark in terms of quality and consistency 
-          and provides its clients with pre-press, press, and post-press facilities under one roof.
+          Cosmo Communication is a privately-owned press with 25 years of experience in the industry. 
+          We offer a comprehensive range of printing services, 
+          including graphic design and layout, high-speed and high-volume copying in both black and white 
+          and color, as well as flex printing. 
+          Our expertise extends to meeting all your corporate stationery and printing needs.
         </p>
       </div>
     </div>

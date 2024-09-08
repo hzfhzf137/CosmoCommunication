@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-const WhatWeDo = () => {
+const MissionStatment = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -31,27 +31,20 @@ const WhatWeDo = () => {
   return (
     <div
       ref={sectionRef}
-      className=" flex flex-col  justify-center items-start bg-gray-400 p-6 md:p-10 w-screen md:w-1/2 h-[50vh] shadow-lg"
+      className=" flex flex-col  justify-center items-start bg-gray-300 p-6 md:p-10 w-screen md:w-1/2 h-[50vh] shadow-lg"
     >
-      <h2
-        className={`text-xl md:text-2xl text-gray-800 font-semibold  text-center w-full transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-      >
-        WHAT WE DO AT
-      </h2>
       <h2
         className={`text-xl md:text-2xl text-gray-800 font-semibold mb-3 md:mb-5 border-b-2 border-gray-500 pb-2 text-center w-full transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
       >
-       Cosmo Communication
+         Mission Statement
       </h2>
       <p
         className={`text-sm md:text-base leading-relaxed text-gray-600 text-justify transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
       >
-        We are a one-stop, state-of-the-art printing company with diverse printing solutions that aims to increase your business efficiency and reduce your costs. 
-        As your partner in print, we value your trust. That’s why we listen and understand your needs to generate innovative ideas to create value-added, 
-        quality products, just for you.
+        Our mission is to deliver the highest quality products and services promptly and at competitive prices. We are dedicated to understanding your needs and helping you achieve your business goals. You can rely on us for honest, expert advice and responsive, friendly customer service. Our commitment is to consistently meet and exceed your expectations.
       </p>
     </div>
   );
 };
 
-export default WhatWeDo;
+export default MissionStatment;

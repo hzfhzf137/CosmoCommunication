@@ -47,11 +47,13 @@ const Navbar = () => {
         <header className="bg-black bg-opacity-50 pr-2 pl-2 fixed top-0 left-0 w-full z-50 shadow-lg">
             <nav className="flex items-center justify-between p-2 sm:p-3 md:p-5">
                 <div className="flex items-center">
-                    <img
-                        src={cosmoLogo}
-                        alt="company logo"
-                        className="w-32 h-12 object-contain"
-                    />
+                    <Link to="/" onClick={closeMenu}>
+                        <img
+                            src={cosmoLogo}
+                            alt="company logo"
+                            className="w-36 h-14 object-contain" // Increased logo size
+                        />
+                    </Link>
                 </div>
                 <div className="flex items-center space-x-4">
                     <button
@@ -111,15 +113,15 @@ const Navbar = () => {
                                         Cosmo Communication
                                     </Link>
                                 </li>
-                                {/* <li>
+                                <li>
                                     <Link
-                                        to="/work"
+                                        to="/product-and-services"
                                         className="hover:text-gray-300 hover:border-b-2 hover:border-orange-500 transition duration-300"
                                         onClick={closeMenu}
                                     >
-                                        Work
+                                        Product and Services
                                     </Link>
-                                </li> */}
+                                </li>
                                 <li>
                                     <Link
                                         to="/contact-us"

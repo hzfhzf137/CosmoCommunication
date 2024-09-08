@@ -33,6 +33,10 @@ export default {
           '0%': { opacity: 0, transform: 'translateY(20px)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
         },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10px)' },
@@ -51,12 +55,16 @@ export default {
         spin: 'spin 1s linear 1',
         pulseInfinite: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         fadeInUp: 'fadeInUp 0.8s ease-out forwards',
+        fadeIn: 'fadeIn 1s ease-out',
         float: 'float 3s ease-in-out infinite',
         rotateSlow: 'rotateSlow 10s linear infinite',
         slideHorizontal: 'slideHorizontal 10s linear infinite',
       },
       boxShadow: {
         'text-shadow-lg': '2px 2px 4px rgba(0, 0, 0, 0.8)',
+      },
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
       },
     },
   },
@@ -74,5 +82,4 @@ export default {
     textAlign: true,
     textJustify: true,
   },
-
 };

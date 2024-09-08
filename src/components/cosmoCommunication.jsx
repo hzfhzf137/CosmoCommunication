@@ -2,9 +2,10 @@ import React from 'react';
 import Navbar from './navbar';
 import CeoMessage from './ceoMessage';
 import CeoImage from './ceoImage';
-import OurJourney from './ourJourney';
-import WhatWeDo from './whatWeDo';
+import CompanyCulture from './companyCulture';
+import MissionStatment from './missionStatment';
 import ClientCardHolder from './clientCardHolder';
+import YearsAndClients from './yearsAndClients';
 import ServicesCardHandler from './servicesCardHandler';
 import Footer from './footer';
 
@@ -17,10 +18,11 @@ const CosmoCommunication = () => {
                 <CeoImage />
             </div>
             <div className=" flex flex-col  md:flex-row w-screen">
-                <OurJourney />
-                <WhatWeDo />
+                <CompanyCulture />
+                <MissionStatment />
             </div>
             <ServicesCardHandler/>
+            <YearsAndClients/>
             <ClientCardHolder/>
             <Footer />
         </React.Fragment>
