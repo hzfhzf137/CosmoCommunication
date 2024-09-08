@@ -16,7 +16,7 @@ const Footer = () => {
         {/* Social Media Links */}
         <div className="flex space-x-4 mb-4">
           <a 
-            href="https://api.whatsapp.com/send?phone=923014278823"
+            href="https://api.whatsapp.com/send?phone=923008423278"
             className="text-green-400 hover:text-green-500 transition-transform duration-300 transform hover:scale-110"
             aria-label="Chat with us on WhatsApp"
           >

@@ -73,7 +73,7 @@ const ServicesCardHandler = () => {
     ];
 
     return (
-        <div className="w-screen grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-8">
+        <div className="w-screen grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-8 mb-10">
             {services.map((service, index) => (
                 <div
                     key={index}
