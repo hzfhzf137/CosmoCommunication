@@ -69,7 +69,7 @@ const ImageCardHandler = () => {
       <h2
         className={`text-base sm:text-lg md:text-xl lg:text-2xl font-bold pt-10 text-white`}
       >
-        Our Recent Creation
+        Our Recent Creations
       </h2>
     <div
       ref={galleryRef}
